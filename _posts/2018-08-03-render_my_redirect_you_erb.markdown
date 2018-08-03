@@ -16,16 +16,16 @@ permalink:  render_my_redirect_you_erb
 <p>First, A stack overflow question and answer (I know, I know...the endless void of half learning). Within the problem/answer messages, I found this gem: "The flash hash persists for exactly one redirect or render. So you should be fine with the default settings.". Bingo! That's how I was able to pass my error message (technically flash[:message]) while using a redirect. Nice. The other page, written by Gustavo, includes a good block of code for us readers to review for a use case scenario. Disclosure, I have added comments to highlight the topics discussed.</p>
 ```
 def create
-    @user = User.new(params[:user])                                   #Variable can be dropped or carried, render vs redirect
+    @user = User.new(params[:user])    #Variable can be dropped or carried, redirect vs render
     if @user.save
       sign_in @user   
-      flash[:success] = "Welcome to Gentle Reminder"  #FLASH PERSISTENCE/MESSAGE FOR THE REDIRECT
-       redirect_to new_user_goal_path(@user)                 #REDIRECT 
+      flash[:success] = "Welcome to Gentle Reminder"    #FLASH PERSISTENCE/MESSAGE FOR THE REDIRECT
+       redirect_to new_user_goal_path(@user)    #REDIRECT 
     else
-      render "new"                                                                        #RENDER if signup failed
+      render "new"    #RENDER if signup failed
     end
   end
 ```
-<p>At this point, I think we get the idea. I did find one last good piece worth mentioning, at stackoverflow: "So the place where redirect_to should be used is when you're doing a HTTP POST request and you don't want the user to resubmit the request when it's done (which may cause duplicate items and other problems)." Good advice. This should cover the basics, if anyone wants to read a good and in depth guide on the subject of render vs redirect, reference the following link.</p>
+<p>At this point, I think we get the idea. I did find one last good piece worth mentioning, at stackoverflow: "So the place where redirect_to should be used is when you're doing a HTTP POST request and you don't want the user to resubmit the request when it's done (which may cause duplicate items and other problems)." Good advice. This should cover the basics, if anyone wants to read a solid in-depth guide on the subject of render vs redirect, reference the following link.</p>
 <p>https://gist.github.com/jcasimir/1210155</p>
 
