@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Flight Lesson Tracker: a rails web-app"
-date:       2018-08-10 03:30:05 +0000
+title:      "Flight Lesson Tracker: a rails web app"
+date:       2018-08-09 23:30:06 -0400
 permalink:  flight_lesson_tracker_a_rails_web-app
 ---
 
