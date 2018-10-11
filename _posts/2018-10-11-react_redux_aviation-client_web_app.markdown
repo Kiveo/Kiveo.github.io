@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "React + Redux: Aviation-Client web app"
-date:       2018-10-11 08:59:01 +0000
+title:      "React Redux: Aviation Client web app"
+date:       2018-10-11 04:59:01 -0400
 permalink:  react_redux_aviation-client_web_app
 ---
 
