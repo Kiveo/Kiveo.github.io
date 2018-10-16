@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Resolving Javascript Promises"
+title:      "Resolving Javascript: Promises"
 date:       2018-10-15 21:03:38 -0400
 permalink:  resolving_javascript_promises
 ---
