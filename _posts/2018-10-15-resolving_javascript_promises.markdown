@@ -20,7 +20,7 @@ var promise = new Promise(function(resolve, reject) {
 });
 ```
 
-<p>Now some definition and terminology: A promise is an object that may produce a value, some time in the future. Of note is that promises allow for a synchronous handling of an asychronous action, such as api calls. The value returned may be a *resolved* value, or a *rejected* value (the cause of the rejection, such as an error). These returned values can then be handled by callback functions. Have you ever seen a `.then`? Stuff like that. </p>
+<p>Now some definition and terminology: A promise is an object that may produce a value, some time in the future. Of note is that promises allow for a synchronous handling of an asychronous action, such as api calls. The value returned may be a *resolved* value, or a *rejected* value (the cause of the rejection, such as an error). These returned values can then be handled by callback functions.</p>
 
 <p>A promise has 3 possible "states". </p>
 1. It may be *fulfilled*. <br/>
