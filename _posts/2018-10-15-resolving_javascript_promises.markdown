@@ -56,7 +56,14 @@ somePromise.then((successGreeting) => {
 });
 ```
 
-Run the above code in your browser dev tools console (press F12). After you see the console log, go ahead and type in somePromise then press enter again. Notice a difference? Pretty cool.
+Run the above code in your browser dev tools console (press F12). After you see the console log, go ahead and type in somePromise then press enter again. Notice a difference? If done correctly, the output should look like this: 
+```
+Promise {<pending>}
+VM102:10 Hello, World!
+somePromise
+Promise {<resolved>: "World!"}
+```
+We can see the intial call was labeled pending state, but after success, the callback .then logs our message. Moreover, when we call somePromise again, it has its label as resolved already. Did I mention a promise can only be settled once? Pretty cool to see the basics all come together.
 
 
 <p>Resources:
