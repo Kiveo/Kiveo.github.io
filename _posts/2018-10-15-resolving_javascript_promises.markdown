@@ -7,15 +7,18 @@ permalink:  resolving_javascript_promises
 
 
 <p>Let's jump right in. What is a promise? Well, it looks something like this code:</p>
-`var promise = new Promise(function(resolve, reject) {
-    // some async action
+
+```
+var promise = new Promise(function(resolve, reject) {
+// some async action
   if (/* no errors */) {
     resolve("Request has been resolved.");
   }
   else {
     reject(Error("Rejection is harsh"));
   }
-});` 
+});
+```
 
 <p>Now some definition and terminology: A promise is an object that may produce a value, some time in the future. Of note is that promises allow for a synchronous handling of an asychronous action, such as api calls. The value returned may be a *resolved* value, or a *rejected* value (the cause of the rejection, such an an error). These returned values can then be handled by callback functions. Have you ever seen a `.then`? Stuff like that. </p>
 
