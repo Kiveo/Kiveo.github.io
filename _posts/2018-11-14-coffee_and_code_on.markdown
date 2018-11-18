@@ -3,6 +3,7 @@ layout: post
 title:      "Coffee and Code On"
 date:       2018-11-14 13:01:52 +0000
 permalink:  coffee_and_code_on
+excerpt: When life slows down from a high speed, high stress stress month, we tend to settle into ourselves. We take a moment to relax and think about all the little things we had to put on hold, as we rushed to meet a deadline or deal with the chaos of life. The dust has settled. Now, time to get back to coding...
 ---
 
 
@@ -29,3 +30,5 @@ When life slows down from a high speed, high stress stress month, we tend to set
 <p>I did some research into my blog as well. As it turns out, it is getting auto formatted by github pages. As I read about the blog, I came across terms I want to research further this week. Github pages seems like it has some pretty good potential for customization. Moreover, Jekyll and using a static page generator native to Ruby sounds really up my alley! I look forward to learning and playing more with these. If all goes well, this blog will be getting a major facelift shortly.</p>
 
 <p>The final list item, refactoring and beautifying, is my next endeavor. I would very much like to update my portfolio projects to be a bit more enticing to the eyes. I realized a lot of my work was centered around functionality. I am a full stack developer, so I must appeal to the design aesthetics as well. Sure, I know front end languages well enough, but when I apply somewhere: something tells me the resume reviewer is going to take a glance at a site... not test all of its features. Who knows? I'm no recruiter. Either way, with the side work including personal pages and apps, I really should flesh out a prettier portfolio. Thus, I foresee more coffee in the coming days!</p>
+
+<p>18 Nov 2018 (Update): A few days have gone by since the initial posting. I have accomplished much of what I set out to do. Most excitingly, if you're reading this: I have revamped and taken control of my blog. Huzzah! Enjoy the coffee, friends.</p>
