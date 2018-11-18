@@ -45,8 +45,9 @@ a img {
 }
 
 blockquote {
-	color: @gray;
+	color: black;
 	font-style: italic;
+	background-color: #F99D75;
 }
 
 hr.small {
@@ -59,7 +60,7 @@ hr.small {
 // Navigation
 
 .navbar-custom {
-	background: white;
+	background: rgba(0,0,0,0.5);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -67,7 +68,14 @@ hr.small {
 	z-index: 3;
 	.sans-serif;
 	.navbar-brand {
+		visibility: visible;
 		font-weight: 800;
+		color: @gray-light;
+		background-color: @brand-primary;
+		border: 5px solid white;
+		padding: 5px;
+		padding-top: 10px;
+		margin: 5px;
 	}
 	.nav {
 		li {
@@ -76,6 +84,8 @@ hr.small {
 				font-size: 12px;
 				font-weight: 800;
 				letter-spacing: 1px;
+				color: @gray-light;
+				background: rgba(0,0,0,0.5);
 			}
 		}
 	}
@@ -83,11 +93,12 @@ hr.small {
 		background: transparent;
 		border-bottom: 1px solid transparent;
 		.navbar-brand {
+			visibility: hidden; 
 			color: white;
 			padding: 20px;
 			&:hover,
 			&:focus {
-				color: @white-faded;
+				color: @brand-primary;
 			}
 		}
 		.nav {
@@ -95,6 +106,7 @@ hr.small {
 				a {
 					color: @link-faded;
 					padding: 20px;
+					background: inherit;
 					&:hover,
 					&:focus {
 						color: @link-primary;
@@ -167,7 +179,8 @@ hr.small {
 	.post-heading,
 	.page-heading {
 		padding: 100px 0 50px;
-		color:@brand-faded;
+		// color: white;
+		color: orange;
 		@media only screen and (min-width: 768px) {
 			padding: 150px 0;
 		}
@@ -180,6 +193,7 @@ hr.small {
 			font-size: 50px;
 		}
 		.subheading {
+			color: white;
 			font-size: 24px;
 			line-height: 1.1;
 			display: block;
@@ -187,9 +201,23 @@ hr.small {
 			font-weight: 300;
 			margin: 10px 0 0;
 		}
+		// h1::first-letter {
+		// 	color: @gray-light;
+		// 	background-color: orangered;
+		// 	border: 7px solid white;
+		// 	padding: 5px;
+		// 	line-height: 1.7em;
+		// 	margin-right: 2px;
+		// }
 		@media only screen and (min-width: 768px) {
 			h1 {
 				font-size: 80px;
+			}
+			h1::first-letter {
+				color: @gray-light;
+				background-color: orangered;
+				border: 7px solid white;
+				padding: 5px;
 			}
 		}
 	}

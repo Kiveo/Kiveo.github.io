@@ -4,19 +4,25 @@ layout: default
 
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <hr class="small">
-                    <span class="subheading">{% if page.title != "About" %}{{ site.description }}{% endif %}</span>
+    <!-- inline style particular to bg image for intro-header and shader div -->
+    <div class="shader" style="background-color: rgba(0,0,0,0.7);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                        <hr class="small">
+                        <!-- Use example below to 'turn off' sub heading -->
+                        <!-- <span class="subheading">{% if page.title != "About" %}{{ site.description }}{% endif %}</span> -->
+                        <span class="subheading">{% if page.description %}{{page.description}}{% else %}{{ site.description }}{% endif %}</span>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
-
+    
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
