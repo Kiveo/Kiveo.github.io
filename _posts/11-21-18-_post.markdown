@@ -1,0 +1,6 @@
+This is designed  
+to be a temporary post.
+
+Markdown? *Check!*
+
+Make a **bold** post and change the world!
