@@ -415,3 +415,6 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #ff4500;
 }
+ol li {
+  padding: 0.5em 0;
+}
