@@ -1,5 +1,7 @@
 #Clean Blog by Start Bootstrap - Jekyll Version
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kiveo/Kiveo.github.io.svg)](https://greenkeeper.io/)
+
 The official Jekyll version of the Clean Blog theme by [Start Bootstrap](http://startbootstrap.com/).
 
 ###[View Live Demo &rarr;](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/)
