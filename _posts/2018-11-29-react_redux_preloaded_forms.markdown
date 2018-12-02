@@ -6,7 +6,10 @@ permalink:  react_redux_preloaded_forms
 excerpt: "Tutorials online often speak about Reactjs forms. One of the first things they will lead one to do is create a 'controlled' form. So, we are going to refresh some of the basic concepts surrounding react forms and redux integration. That said, our focus is going to be a bit further down the rabbit hole: preloaded form data. This is especially useful for an edit or update page."
 ---
  
-Tutorials online often speak about Reactjs forms. One of the first things they will lead one to do is create a 'controlled' form. So, we are going to refresh some of the basic concepts surrounding react forms and redux integration. That said, our focus is going to be a bit further down the rabbit hole: preloaded form data. This is especially useful for an edit or update page. This guide does not leverage the 'react redux forms' library.
+Tutorials online often speak about Reactjs forms. One of the first things they will lead one to do is create a 'controlled' form. So, we are going to refresh some of the basic concepts surrounding react forms and redux integration. That said, our focus is going to be a bit further down the rabbit hole: preloaded form data. This is especially useful for an edit or update page.
+
+Here is a sample update form:
+![Edit Form](https://lh3.googleusercontent.com/9eI9Qd5r8UlD5Ech5Ke_svufIhslZYg1ewjWPaUd_x0w_7YvyOYgBDrOGOCLDVDe4acmij-w5One7pHMCUiHUygQY2JrJs98d47j95Z6goEL9-oGHv4EmJJ1cG2b4_h8s2SlUj459lBx8GGnWDd-zj3et4uWhJ8ODjoOpSzElICJ4fFvAgZ_iTA9xB_tF9NxwuJuIolbnIuo3fZESaJjNXh5cnJrBjjgJTwJGxpAIsDIkxiWP4lGiE13TRUiG_zJemdOx-l_uNyJLRAhkQt776wjJr-HPBNAn0BRelhs9tIuGeA47szGyUFm4lT9T5xgAAidOIAzS3watwRJBI6QhfBjthxsYbRujCbWfbngWDs7vCg4T_ukiv6MnFR1gLTLHbQ5yXLkCfTX_L9RyjZweIjig0kbm33E31a0VuMtJR548BG0d8bkLk7cPuspB5mP8Tbca_LNnRFia7YN75PU3WKOowsd0wd3Ot1rNHDx3mO6KyOyT2yhUgQovLAm_TAVz6U8rYl0OODKcp53wQEaPKOyLUWf2Px2OpKYh3OX5paMI15i0as2kj-LuK0M3vvnRMo6LayFZw2ioEBPSIZZG0rys0QgNN0pNC138uJfR5Q2AH38XBefYrhQM7XE2UljKo4S7yq0_ErstSN208gOadco=w1330-h760-no)
 
 A quick review: a *controlled form* is generally considered a form whose input fields are monitored and mirrored into the state of the component. Since we are using Redux, our state is not local to the component, it's usually in the single-state store. The concept remains. An *uncontrolled form* is a form where changes to the input field do not dynamically update the component/store's state. We do not 'control' the state with an uncontrolled form. 
 
@@ -42,10 +45,7 @@ Here is a sample uncontrolled form, which uses default values:
       </div>
 ~~~~
 
-Depending on how your project is set up, you can mapStateToProps or pass props to this form component, but the idea remains the same. We use the current object's state (person in the above example) to populate data into our fields. The user can edit that data and submit. The onSubmit triggers a function that handles form inputs and ultimately sends a Redux dispatch to update the store state. 
-
-Here is an image depicting a use-case scenario of an update form for airplane info:
-![Edit Form](https://lh3.googleusercontent.com/9eI9Qd5r8UlD5Ech5Ke_svufIhslZYg1ewjWPaUd_x0w_7YvyOYgBDrOGOCLDVDe4acmij-w5One7pHMCUiHUygQY2JrJs98d47j95Z6goEL9-oGHv4EmJJ1cG2b4_h8s2SlUj459lBx8GGnWDd-zj3et4uWhJ8ODjoOpSzElICJ4fFvAgZ_iTA9xB_tF9NxwuJuIolbnIuo3fZESaJjNXh5cnJrBjjgJTwJGxpAIsDIkxiWP4lGiE13TRUiG_zJemdOx-l_uNyJLRAhkQt776wjJr-HPBNAn0BRelhs9tIuGeA47szGyUFm4lT9T5xgAAidOIAzS3watwRJBI6QhfBjthxsYbRujCbWfbngWDs7vCg4T_ukiv6MnFR1gLTLHbQ5yXLkCfTX_L9RyjZweIjig0kbm33E31a0VuMtJR548BG0d8bkLk7cPuspB5mP8Tbca_LNnRFia7YN75PU3WKOowsd0wd3Ot1rNHDx3mO6KyOyT2yhUgQovLAm_TAVz6U8rYl0OODKcp53wQEaPKOyLUWf2Px2OpKYh3OX5paMI15i0as2kj-LuK0M3vvnRMo6LayFZw2ioEBPSIZZG0rys0QgNN0pNC138uJfR5Q2AH38XBefYrhQM7XE2UljKo4S7yq0_ErstSN208gOadco=w1330-h760-no) 
+Depending on how your project is set up, you can mapStateToProps or pass props to this form component, but the idea remains the same. We use the current object's state (person in the above example) to populate data into our fields. The user can edit that data and submit. The onSubmit triggers a function that handles form inputs and ultimately sends a Redux dispatch to update the store state.  
 
 This wraps up how we can use an uncontrolled form to preload form data in React Redux. 
 
