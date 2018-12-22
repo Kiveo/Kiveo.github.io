@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Sass CSS"
+date:       2018-12-22 00:30:00 +0000
+permalink:  sass
+excerpt: "It's easy to either use bootstrap or handcode css when quickly putting together a new project. As full stack developers, we need to give more love to our css! Let's talk about my favorite way: Sass"
+---
+ 
+It's easy to either use bootstrap or handcode css when quickly putting together a new project. As full stack developers, we need to give more love to our css! Let's talk about my favorite way: Sass
+
+So, what is Sass?  
+Sass is a css 'extension' that 'extends' how developers can write css code. Assuming anyone reading this is at least familiar with html, css, and at least one traditional coding language. Ruby, Javascript, Python, C, Java, etc. Now, imagine writing css code in a manner similar to the way we write Javascript. Sass extends the functionality of having variables, logic gates, and similar core concepts in programming to traditional css. It's cool stuff!
