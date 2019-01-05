@@ -26,10 +26,24 @@ Destructuring assignment is a term that seems almost an oxymoron. Let's take a l
 11 console.log(rest);
 12 // expected output: [30,40,50]
 ~~~
+>The object and array literal expressions provide an easy way to create ad hoc packages of data.
+~~~
+var x = [1, 2, 3, 4, 5];
+~~~
+>The destructuring assignment uses similar syntax, but on the left-hand side of the assignment to define what values to unpack from the sourced variable. - MDN
 
-Alright, so what's going on here? We know that the expression on line 1 is basically an array assignment of the values a(10) and b(20). Simple enough. The example goes on to print the values of a and b t the console. Ok, still simple. Then, we see what appears to be another array with an added on '...rest' variable. Those 3 variables are then assigned the values of 10, 20, 30, 40, and 50. Wait. How are three variables being assigned to 5 values? If you already know, then well done. For any who might not: that "..." is the array/object spread operator. On that note, much of destructuring is about array and/or objects, so you'll be seeing a lot of the spread operator. You'll probably be using a lot of it too, if not already. [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
+So what's going on here? We know that the expression on line 1 is basically an array assignment of the values a(10) and b(20). The example goes on to print the values of a and b to the console. 
 
-Ok, back to the initial example. We took an array of values, using a spread operator, and implicitly assigned multiple values to the third variable "rest". We assigned values and destructured at the same time. Yea, try not to think to hard about destructuring assignment, heh. I recommend just seeing it as an extension of the spread operator.  
+We see what appears to be another array assignment with an added on '...rest' variable (line 9). Those 3 variables are then assigned the values of 10, 20, 30, 40, and 50. Wait. How are three variables being assigned to 5 values? If you already know, then well done. For any who might not: that "..." is the array/object spread operator. On that note, much of destructuring is about array and/or objects, so you'll be seeing a lot of the spread operator. You'll probably be using a lot of it too, if not already. [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+Ok, back to the initial example. We took an array of values, using a spread operator, and implicitly assigned multiple values to the third variable "rest". We assigned values and destructured at the same time. Yea, try not to think too hard about destructuring assignment. I recommend just seeing it as an extension of the spread operator.  
+
+Let's dive more into the destructuring!
+
+
+
+
+
 
 ~ Coffee and Code on ~
 
