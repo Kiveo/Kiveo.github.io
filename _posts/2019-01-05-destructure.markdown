@@ -38,7 +38,18 @@ We see what appears to be another array assignment with an added on '...rest' va
 
 Ok, back to the initial example. We took an array of values, using a spread operator, and implicitly assigned multiple values to the third variable "rest". We assigned values and destructured at the same time. Yea, try not to think too hard about destructuring assignment. I recommend just seeing it as an extension of the spread operator.  
 
-Let's dive more into the destructuring!
+Let's dive more into the destructuring! The above will make more sense after this. First, we go into array destructuring.
+
+Basic Variable Assignment
+~~~
+let sample = ['hello', 'world'];
+
+let [one, two] = sample;
+console.log(one); // "hello"
+console.log(two); // "world"
+~~~
+
+In the above example, we create a sample variable and give it a value of the hello world array. We then destructure by creating namespace-like variables('one' and 'two') and assigning them to the array 'sample'. That's the basic magic of destructuring. This syntax will auto-magically assign 'one' (variable name doesn't matter) to be the first value of the assigned array. Naturally, the sequence continues with 'two' being assigned the next value of the array, world.
 
 
 
